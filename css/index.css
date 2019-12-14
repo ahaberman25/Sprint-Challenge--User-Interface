@@ -262,3 +262,31 @@ box10: dodgerblue
     width: 95%;
     margin: 0 auto;
 }
+
+/* STRETCH TASK ANIMATIONS*/
+nav a {
+    padding: 0.7em 0;
+    color: black;
+    position: relative;
+    text-decoration: none;
+}
+
+nav a:before {
+    position: absolute;
+    content: '';
+    transition: all 0.35s ease;
+    opacity: 0;
+    top: 25%;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+}
+
+nav a:hover:before,
+nav .current a:before {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+} 
