@@ -144,3 +144,149 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* STARTING MY CODE */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-container {
+    display: flex;
+    padding: 3% 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2%;
+    width: 100%;
+}
+
+.homepage-hero-img {
+    padding: 0 0 2% 0;
+}
+
+/* BOX COLORS  
+box1: teal
+box2: gold
+box3: cadetblue
+box4: coral
+box5: crimson
+box6: forestgreen
+box7: darkorchid
+box8: hotpink
+box9: indigo
+box10: dodgerblue 
+*/
+
+.middle-content .boxes .box {
+    background-color: teal;
+}
+
+.middle-content .boxes .box:nth-child(2n) {
+    background-color: gold;
+}
+
+.middle-content .boxes .box:nth-child(3n) {
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(4n) {
+    background-color: coral;
+}
+
+.middle-content .boxes .box:nth-child(5n) {
+    background-color: crimson;
+}
+
+.middle-content .boxes .box:nth-child(6n) {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7n) {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(8n) {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9n) {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10n) {
+    background-color: dodgerblue;
+}
+
+/* ABOUT START */
+
+.under-about {
+    border: 1px dashed black;
+}
+
+.about-top {
+    padding: 0 1%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.about-block-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.about-items {
+    padding: 3% 3%;
+    width: 48%;
+}
+
+.about-items-content {
+    padding: 2% 0;
+    border-bottom: 1px dashed black;
+    width: 110%;
+}
+
+.about-items-content .btn {
+    line-height: 3;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 2%;
+}
+
+.about-bottom-content {
+    padding: 3% 0 5% 0;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* STRETCH TASK ANIMATIONS*/
+nav a {
+    padding: 0.7em 0;
+    color: black;
+    position: relative;
+    text-decoration: none;
+}
+
+nav a:before {
+    position: absolute;
+    content: '';
+    transition: all 0.35s ease;
+    opacity: 0;
+    top: 25%;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+}
+
+nav a:hover:before,
+nav .current a:before {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+} 
